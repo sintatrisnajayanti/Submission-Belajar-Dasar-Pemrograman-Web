@@ -1,0 +1,158 @@
+/* bagian umum */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-sertif;
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3 {
+    color: #FFA45B; 
+}
+
+p {
+    text-indent: 2em;
+    font-family: sans-sertif;
+    text-align: justify
+}
+
+#letter-spacing {
+    letter-spacing: 4px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 #FFDA77;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 30px;
+}
+
+/* bagian header */
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #FFDA77;
+    background-image: repeating-linear-gradient(#FBF6F0, #DDFFBC);
+    text-align: center;
+    color: #FFDA77;
+}
+
+/* bagian Navbar */
+nav{
+    background-color: #FFA45B;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+    color: white;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+/* pengaturan image */
+.featured-image {
+    width: 100%;
+    padding: 10px;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+    transition: transfrom .2s;
+    border-radius: 5px;
+}
+.featured-image:hover {
+    transform: scale(1.1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    width: 600px;
+    padding: 20px;
+}
+
+
+/* pengaturan aside */
+.profile {
+    text-align: center;
+}
+
+aside {
+    float: right;
+    width: 30%;
+    padding: 10px;
+}
+.content {
+    float: left;
+    width: 70%;
+}
+
+.profile-img {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    transition: transfrom .2s;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+td {
+    font-size: 12px;
+}
+
+.bio {
+    font-weight: bold;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#FFA45B;
+    color: white;
+    text-align: center;
+}
+
+.image-sosmed {
+    width: 50px;
+    max-height: 50px;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+ul li {
+    display: inline;
+    padding: 5px;
+    list-style-type: none;
+}
+/* pengaturan responsive */
+@media screen and (max-width: 1000px) {
+    .content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
